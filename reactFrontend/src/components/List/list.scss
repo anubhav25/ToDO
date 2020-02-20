@@ -1,0 +1,107 @@
+.deleteButton {
+  width: 3rem;
+  height: 100%;
+  outline: none;
+  text-align: center;
+  border: none;
+  color: #9d9393;
+  box-sizing: border-box;
+  background: #ffffff;
+  &:hover {
+    color: #009aff;
+  }
+}
+.expandable-listview_outerDiv {
+  height: auto;
+  text-align: left;
+}
+
+.pagination {
+  li:first-child {
+    margin-left: auto;
+  }
+  li:last-child {
+    margin-right: auto;
+  }
+}
+.expandable-listview_ul {
+  margin: 0px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.expandable-listview_listHeader {
+  min-height: 2.5rem;
+  padding: 0.5rem;
+  color: #000000;
+  font-size: 1.5rem;
+  background: #ffffff;
+  border: 1.28056px solid #e5e5e5;
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+  position: relative;
+  margin-bottom: 0.2rem;
+  img {
+    margin: 0 0.5rem 0 0.5rem;
+  }
+  span {
+    float: right;
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    width: 0.5rem;
+    height: 100%;
+    left: 0;
+    top: 0;
+    color: #6c27f9;
+    background: #6c27f9;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+  }
+}
+.expandable-listview_listItems {
+  padding: 0.5rem;
+  display: block;
+  color: #000000;
+  background: #ffffff;
+  border: 1.28056px solid #e5e5e5;
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+  position: relative;
+  margin-bottom: 0.2rem;
+  img {
+    margin: 0 0.5rem 0 0.5rem;
+  }
+  span {
+    float: right;
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    width: 0.8rem;
+    height: 100%;
+    left: 0;
+    top: 0;
+    color: #6c27f9;
+    background: #6c27f9;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+  }
+  img {
+    margin-left: 0.5rem;
+  }
+}
+
+.Expandable {
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+  transition: height 0ms 400ms, opacity 400ms 0ms;
+}
+.Expandable.visible {
+  padding: 0.5rem 0 0.5rem 2rem;
+  height: auto;
+  opacity: 1;
+  transition: height 0ms 0ms, opacity 600ms 0ms;
+}
